@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "aimassist",
+  "version": "${version}",
+  "name": "Aim Assist",
+  "description": "Aim assist mod for Minecraft 1.21.11 - Auto aims at enemies within 7-10 blocks",
+  "authors": ["Player"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.aimassist.AimAssistMod"
+    ]
+  },
+  "mixins": [
+    "aimassist.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
